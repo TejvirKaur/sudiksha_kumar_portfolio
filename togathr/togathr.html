@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Togathr Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="togathr.css">
+    <script src="togathr.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="/assests/Group.png" alt="">
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span id="hamburger-icon">&#9776;</span>
+          <span id="close-icon" style="display: none;">&times;</span>
+        </div>
+        <ul class="nav-links"  id="nav-links">
+          <li><a href="/intro/intro.html">Work</a></li>
+          <li><a href="/about/about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    <header>
+        <h2>TOGATHR</h2>
+        <h1>AI based event planning platform</h1>
+        <img src="/assests/Cover-image.jpg" alt="" >
+    </header>
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#problem" class="nav-link">Problem</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#solution" class="nav-link">Solution</a></li>
+          <li><a href="#informationArchitecture" class="nav-link">Information Architecture</a></li>
+          <li><a href="#WireframesandTesting" class="nav-link">Wireframes and Testing</a></li>
+          <li><a href="#Keyfeatures" class="nav-link">Key features</a></li>
+          <li><a href="#branding" class="nav-link">Design Systsem</a></li>
+          <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+        </ul>
+      </nav>
+
+      <section id="summary">
+        <h2>Summary</h2>
+
+        <div class="summary-box">
+            <div class="summary-section">
+            <strong>Timeline:</strong>
+            <p>12 Weeks</p>
+            </div>
+            <div class="summary-section">
+            <strong>Industry:</strong>
+            <p>Hospitality and Events</p>
+            </div>
+            <div class="summary-section">
+            <strong>Project Team:</strong>
+            <p>Agile Team of 9 (5 Designers + 4 Developers)</p>
+            </div>
+            <div class="summary-section">
+            <strong>Tasks:</strong>
+            <p>User research, Branding, wireframes, UI design</p>
+            </div>
+        </div>
+
+        <p>ToGathr is an AI-powered web platform designed to make event planning effortless. It consolidates budgeting, vendor management, guest tracking, and team collaboration into one intuitive space. Our goal was to reduce the stress of event planning and replace fragmented workflows with a seamless, end-to-end digital solution.</p>
+        <a href="https://www.figma.com/proto/tDNwI24nvg5z5sKRvmJSCb/High-Fidelity-Wireframes?page-id=1627%3A71035&node-id=1627-71203&viewport=3201%2C2410%2C0.25&t=pLGExd0Ls3CI9Szv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1654%3A27068&show-proto-sidebar=1">Figma Prototype</a>
+        <a href="https://www.togathr.ca/">Togathr Web Platform</a>
+
+        <h3>My Role</h3>
+         <div class="details-box">
+            <div class="section">
+            <div class="section-title">Design</div>
+            <div class="section-text">
+                In the UX design phase, I designed the information architecture for the entire platform followed by the user flow for the overview, budget and collaborators sections. In the UI design phase, I created the brand color palette. Additionally, I worked on the Overview and Collaborators pages. I was also in charge of all the custom illustrations developed for the platform.
+            </div>
+            </div>
+            <div class="section">
+            <div class="section-title">Collaboration</div>
+            <div class="section-text">
+                I had the opportunity to work as the project manager during the course of the design and development of this project. We worked using the agile methodology with each sprint being 1 week long. I was responsible for facilitating the sprint planning and sprint review meetings and managed the team's workflow on Trello.
+            </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="problem">
+      <h2>Problem</h2>
+      <img src="/assests/02 Problem.jpg" alt="">
+      <p>Event planning is fragmented and stressful, often requiring multiple apps to manage budgets, guests, and vendors. Finding trusted vendors is also difficult, with many relying on word-of-mouth or unreliable online reviews.</p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+        <p>Primary and secondary research was conducted to understand how users plan events, identify pain points, and uncover opportunities to streamline the process through an all-in-one platform.</p>
+        <h3>Secondary research - Competitor Analysis</h3>
+        <img src="/assests/05 competitor analysis 1.png" alt="">
+        <p>It was observed that the online event planning space was either mainly focused on weddings or large scale events involving ticket sales. There were simply not enough platforms catering to the need of personal event planning.</p>
+        <h3>Primary research - User Interviews & Personas</h3>
+        <p>Two groups of users were interviewed.</p>
+        <a href="https://docs.google.com/document/d/1onCtg5XjoteOk-iXKsJhzaGKa8JInk7oDapmvJ-QyhU/edit?usp=sharing">Interviews Script</a>
+
+         <table style="margin-top: 2rem;">
+          <tr>
+            <th>User Type</th>
+            <th>Number of Users Interviewed</th>
+          </tr>
+          <tr>
+            <td>Anyone who wants to plan an event</td>
+            <td>X 5</td>
+          </tr>
+          <tr>
+            <td>Professional event planners</td>
+            <td>X 2</td>
+          </tr>
+        </table>
+
+        <h3>Interview Insights</h3>
+          <div class="wrapper">
+            <div class="card">
+              <b>Event planning is collaborative</b>
+              People often seek input and help from friends and family, making teamwork an essential part of the process.
+            </div>
+
+            <div class="card">
+              <b>Budgeting is central</b>
+              Managing expenses is one of the biggest challenges users face when planning an event.
+            </div>
+
+            <div class="card">
+              <b>Getting started is overwhelming</b>
+              Many users feel unsure and intimidated at the beginning of the planning journey, not knowing where to begin.
+            </div>
+          </div>
+
+          <div>
+            <h3>User Persona #1</h3>
+            <img src="/assests/User Persona-3.jpg" alt="">
+          </div>
+
+          <div>
+            <h3>User Persona #2</h3>
+            <img src="/assests/User Persona-1.jpg" alt="">
+          </div>
+      </section>
+
+      <section id="solution">
+        <h2>The Solution</h2>
+        <div class="solutionDiv">
+        <img src="/assests/Group 1000005913.png" alt="">
+        <p>ToGathr is a web platform that uses AI to simplify personal and professional event planning by combining task management, budgeting, vendor search, guest RSVPs, and team collaboration in one place.</p>
+        </div>
+      </section>
+
+      <section id="informationArchitecture">
+        <h2>Information Architecture</h2>
+        <img src="/assests/Group 1000006056.png" alt="">
+      </section>
+
+      <section id="WireframesandTesting">
+        <h2>Wireframes and Testing</h2>
+        <p>We conducted user testing with our mid-fidelity wireframes where one of the most severe issues noticed was that keeping the side navigation close by default was affecting the discoverability of the features. So in the next version we decide to eliminate the collapsible menu and decided to keep it open at all times.</p>
+        <a href="/assests/WMDD4925_M01_6_Usability_Report.pdf">Usability Report</a><br>
+        <img src="/assests/Group 1000005946 1.png" alt="" style="margin-top: 2rem;">
+      </section>
+
+      <section id="Keyfeatures">
+        <h2>Togathr | Key features</h2>
+        <a href="https://www.figma.com/proto/tDNwI24nvg5z5sKRvmJSCb/High-Fidelity-Wireframes?page-id=1627%3A71035&node-id=1627-71203&viewport=3201%2C2410%2C0.25&t=pLGExd0Ls3CI9Szv-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1654%3A27068&show-proto-sidebar=1">Figma Prototype</a>
+        <a href="https://www.togathr.ca/">Togathr Web platform</a>
+        <h3>Event Creation</h3>
+        <p>The event creation process is made highly intuitive and engaging for new users</p>
+        <img src="/assests/Group 1000006068.jpg" alt="">
+
+        <h3>Event Overview</h3>
+        <p>This page gives users a quick glimpse of all the major aspects of their event. Additionally, every user gets a task list based on the event type they selected during the event creation process so they don’t have to start form scratch.</p>
+        <img src="/assests/Group 1000006069.jpg" alt="">
+
+        <h3>Vendors</h3>
+        <p>Users can browse through hundreds of vendors and find their best match.</p>
+        <img src="/assests/Group 1000006070.jpg" alt="">
+
+        <h3>Budget tracking</h3>
+        <p>Users can track their budget with ease as most of it is automated. When the user books a vendor the price of that booking is added to the budget.</p>
+        <img src="/assests/Group 1000006071.jpg" alt="">
+
+        <h3>Collaborators & Guest lists</h3>
+        <p>ToGathr makes event planning smarter and more collaborative by automating budget tracking and enabling teamwork. As users book vendors, costs are automatically added to their budget, giving them real-time insights. They can also invite friends, family, or colleagues to join the planning process and assign tasks, making collaboration seamless and organized.</p>
+        <img src="/assests/Group 1000006072.jpg" alt="">
+      </section>
+
+      <section id="branding">
+        <h2>Branding, Design Systsem and Hand-off</h2>
+        <p>ToGathr’s branding is warm, modern, and approachable, reflecting the joy and connection at the heart of every event. The visual identity uses clean layouts, soft yet vibrant colors, and playful illustrations to make planning feel less like a chore and more like part of the celebration. It's designed to build trust, reduce stress, and invite collaboration, whether the user is organizing a small gathering or a large-scale event.</p>
+        <img src="/assests/13 UI kit branding.jpg" alt="">
+        <img src="/assests/14 UI kit components.jpg" alt="">
+        <img src="/assests/Section 1 1.png" alt="">
+        <p>To ensure smooth front-end implementation, we built a centralized design library where developers can easily reference all UI elements, including components, color styles, and card layouts that are used throughout the platform.
+        And during the hand-off phase, all the screens were annotated to ensure a smooth handover to the development team.</p>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusion</h2>
+        <p>ToGathr addresses real pain points in event planning by centralizing critical tasks into one responsive, user-friendly platform. Through iterative design, deep user research, and thoughtful collaboration between designers and developers, we built a tool that brings structure to chaos. <br>
+
+        The most important learning for me through this project was the importance of prioritization. As a team we underestimated the effort it would take to design and develop so many features within a set time period of 12 weeks. I think that a more focused approach with reduced features would have helped us achieve better refinement. 
+        </p>
+      </section>
+
+    <div class="MoreProjects">
+      <h2>More Projects</h2>
+       <div class="projects-grid">
+          <a href="/shein/shein.html" style="text-decoration: none; color: black; background-color: #E4D5FA;">
+          <div class="project project1">
+            <img src="/assests/Group 182.png" alt="Shein Project" />
+            <div class="description" style="background-color: #E4D5FA;">
+              <h3 style="background-color: #E4D5FA;">Shein</h3>
+              <p style="background-color: #E4D5FA;">AI based event planning platform</p>
+              <p class="sub-heading" style="background-color: #E4D5FA;">UX Study . Product . Mobile App</p>
+            </div>
+            </a>
+          </div>
+
+          <a href="/safemilo/safemilo.html" class="project project2" style="text-decoration: none; color: black; background-color:#FFDFB7;">
+          <div class="project project2">
+            <img src="/assests/Group 1000006092.png" alt="Safemilo project" />
+            <div class="description" style="background-color: #FFDFB7;">
+              <h3 style="background-color: #FFDFB7;">SafeMilo</h3>
+              <p style="background-color: #FFDFB7;">Scam Protection App for Senior Citizens</p>
+              <p class="sub-heading" style="background-color: #FFDFB7;">UI/UX . Product . Web App . Agile</p>
+            </div>
+          </div>
+          </a>
+        </div>
+    </div>
+
+
+    
+      <footer id="contact">
+        <h2>Contact</h2>
+        <div class="socials">
+            <a href="mailto:sudikshask1@gmail.com " style="text-decoration: none;">
+                <img src="/assests/message.png" alt="Email Icon">
+              </a>
+              <a href="https://www.linkedin.com/in/sudiksha-kumar/" rel="noopener noreferrer">
+                <img src="/assests/Group 14.png" alt="LinkedIn Icon">
+              </a>
+        </div>
+        <p>&copy; Sudiksha Kumar 2025</p>
+      </footer>
+</body>
+</html>

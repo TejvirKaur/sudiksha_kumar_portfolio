@@ -1,0 +1,25 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const closeIcon = document.getElementById('close-icon');
+  
+hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+  
+      const isOpen = navLinks.classList.contains('show');
+      hamburgerIcon.style.display = isOpen ? 'none' : 'inline';
+      closeIcon.style.display = isOpen ? 'inline' : 'none';
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const showPdfBtn = document.getElementById("showPdfBtn");
+
+  if (showPdfBtn) {
+    showPdfBtn.addEventListener("click", () => {
+      window.open("/assests/Group 146.png", "_blank");
+    });
+  }
+});
+

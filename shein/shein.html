@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shein Case study</title>
+    <link rel="stylesheet" href="shein.css">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,700&display=swap" rel="stylesheet">
+    <script src="shein.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="/assests/Group.png" alt="">
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span id="hamburger-icon">&#9776;</span>
+          <span id="close-icon" style="display: none;">&times;</span>
+        </div>
+        <ul class="nav-links"  id="nav-links">
+          <li><a href="/intro/intro.html">Work</a></li>
+          <li><a href="/about/about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="stickyHeader">
+        <h2>SHEIN</h2>
+        <h1>App UX study to streamline the online shopping experience</h1>
+        <img src="/assests/Group 1000006093.png" alt="" width="75vw">
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="#summary" class="nav-link">Summary</a></li>
+          <li><a href="#research" class="nav-link">Research</a></li>
+          <li><a href="#problem" class="nav-link">Problem Statement</a></li>
+          <li><a href="#redesign" class="nav-link">Re-design</a></li>
+          <li><a href="#conclusion" class="nav-link">Conclusion</a></li>
+        </ul>
+      </nav>
+    </div>
+     
+      <section id="summary">
+        <h2>Summary</h2>
+        <div class="summary-box" style="background-color: white;">
+          <div class="summary-item" style="background-color: white;">
+            <strong style="background-color: white;">Timeline:</strong>
+            <p style="background-color: white;">2 Weeks</p>
+          </div>
+          <div class="summary-item" style="background-color: white;">
+            <strong style="background-color: white;">Industry:</strong>
+            <p style="background-color: white;">E-commerce</p>
+          </div>
+          <div class="summary-item" style="background-color: white;">
+            <strong style="background-color: white;">Tasks:</strong>
+            <p style="background-color: white;">User-Personas,UX Audit,Wireframes</p>
+          </div>
+        </div>
+        <p>Redesigning the well known fast fashion e-commerce app Shein to enhance it’s usability. On research, it was found that the app’s major problems are it’s cluttered interface and disorganized product categories. The updated UX of the app includes a structured system of applying sale banners and discounts. Additionally, product categories are simplified, making it easier to find products and reducing distractions during the shopping process.</p>
+      </section>
+
+      <section id="research">
+      <h2>Research</h2>
+      <p>Shein is an e-commerce app with one of the largest number of users across the world (88 million as of 2023).  The is app is all    about fast fashion and getting the best deals and adds about 2000 new products on the app everyday.
+        In an attempt to showcase all its new products and exciting discounts the app overwhelms the users with too much information and an increased cognitive load every time they visit the app.</p>
+      <h3>Secondary research to understand the user</h3>
+      <p>Online reviews often reveal users' frustrations and clearly highlight their pain points.</p>
+      <img src="/assests/Frame 20.png" alt="">
+      <p>These were some common grievances noticed online</p>
+      <ul>
+        <li>The ads were distracting users from the shopping experience</li>
+        <li>Too many notifications</li>
+        <li>Users found the UI to be very overwhelming</li>
+        <li>Sizing chart was not always accurate</li>
+      </ul>
+      <div class="pdf-container">
+        <button id="showPdfBtn">View User Persona</button>
+        <img id="pdfImage" src="/assests/Group 146.png" alt="User Persona" />
+      </div>
+      </section>
+
+      <section id="problem">
+        <h2>Problem Statement</h2>
+        <p class="problem-statement-box">How might we ensure that Shien users find the apparel/deals of their choice without getting overwhelmed by all the new inventory and sale ads?</p>
+      </section>
+
+      <section id="Re-design">
+      <h2>Re-design</h2>
+      <h3>Homepage - Problems with the existing design</h3>
+      <div class="reDesignProblem">
+      <img src="/assests/Frame 28.png" alt="">
+      <ol>
+        <li>Categories are repeated 3 times on the screen and this clutters the top navigation bar while also being redundant.</li>
+        <li>Many larger categories such as selecting the gender are grouped in with lower level sub-categories which can be overwhelming for the user as they are forced to focus on many categories at once. </li>
+        <li>There is too much happening on screen with many random products thrown together.</li>
+        <li>Placement of sale banners on products adds to the clutter and inconsistency</li>
+        <li>There is so much to see on screen that the user sees nothing.</li>
+      </ol>
+      </div>
+      <h3>Homepage - Redesign</h3>
+      <img src="/assests/Group 133@2x 1 (1).png" alt="">
+      <ol class="redisgnList">
+        <div>
+        <li>Categories Simplified
+          <ul>
+            <li>All the random categories are broadly categorized as - Women, Men, Kids and lifestyle</li>
+            <li>Only top 6 categories are displayed with the option to look at more to ensure that the user is not overwhelmed by the categories while also getting an idea about the range of products</li>
+          </ul>
+        </li>
+      
+        <li>Showcasing Product Value before discounts
+          <ul>
+            <li>By showcasing featured products first we ensure that the user gets to see the most attractive products up front. In the re-design we make sure the user sees the value in the displayed products before throwing discounts at them. </li>
+          </ul>
+        </li>
+        <li>Product feed is no longer random
+          <ul>
+            <li>Products are displayed as a carousel under relevant labels such as Top-deals, Discounts and recommendations. There are no longer any extra tabs that the user has to click on to view categorized content.</li>
+          </ul>
+        </li>
+        </div>
+        <div>
+        <li>Keeping the user excited
+          <ul>
+            <li>All the discounts are not displayed at one stretch in order to keep the user scrolling. This also ensures that the user doesn’t miss anything while trying to look at everything all at once.  </li>
+          </ul>
+        </li>
+        <li>Categories are always accessible with a floating button
+          <ul>
+            <li>Categories have been made into a floating button so it easily accessible, present on most screens. This is done to do away with the repetition of categories several times on the screen.</li>
+          </ul>
+        </li>
+        <li>The top nav bar is simplified
+          <ul>
+            <li>Shopping bag is added to a more prominent place and other things such as points and messages have been removed from the top nav bar</li>
+          </ul>
+        </li>
+        </div>
+      </ol>
+      <div class="categoryRedesign">
+        <div>
+      <h3>Categories - Problems with the existing design</h3>
+      <img src="/assests/WhatsApp Image 2024-07-05 at 10.55.30 AM 1.png" alt="" style="width: auto;">
+      <ol>
+        <li>The user has to choose categories and sub categories three times before the reach the product listing page. </li>
+        <li>Looking at three levels of categories at once is overwhelming to the user. </li>
+        <li>The images are distracting and add to the cognitive load. </li>
+      </ol>
+      </div>
+      <div>
+      <h3>Categories - Redesign</h3>
+      <img src="/assests/Group 154.png" alt="" style="width: auto;">
+      <ul>
+        <li>Categories are displayed as expandable accordions with icons instead of images, ensuring clarity without distraction.</li>
+        <li>Accordions improve navigation by clearly displaying category levels with lists and sub-lists.</li>
+      </ul>
+      </div>
+      </div>
+
+      <div class="ProductDetails">
+        <div>
+      <h3>Product details page - Problems with the existing design</h3>
+      <img src="/assests/WhatsApp Image 2024-07-05 at 11.31.22 AM 1.png" alt="" style="width: auto;">
+      <ul>
+        <li>Images in sub-categories are distracting, and filters are repeated unnecessarily. External filters clutter the page, drawing attention away from products. The add-to-cart button creates a redundant flow without reducing clicks, while an uneven grid adds to the clutter due to inconsistent card lengths from labels like "trends."</li>
+      </ul>
+      </div>
+
+      <div>
+      <h3>Product Listing page - Redesign</h3>
+      <img src="/assests/Product Listing page 1.png" alt="" style="width: auto;">
+      <ul>
+        <li>Sub-categories are simplified with icons instead of images. Product cards are uniform in size, with designated spaces for labels to maintain a clean grid. Only essential details are shown, the ‘add to cart’ button is removed in favor of a wish list, and ratings replace the number of units sold for better relevance.</li>
+      </ul>
+      </div>
+      </div>
+
+
+      <h3>Product details page - Problems with the existing design</h3>
+      <img src="/assests/Group 163 (1).png" alt="">
+      <ol>
+        <li>The User is bombarded with too many details at the same time</li>
+        <li>The user is once again made to switch tabs to get information such as reviews and recommended.</li>
+        <li>Size guide is repeated several times</li>
+      </ol>
+
+      <h3>Product Listing page - Redesign</h3>
+      <div class="ProductListing">
+      <img src="/assests/Group 165 (1).png" alt="">
+      <p>Images are easy to scroll, with alternate views displayed below for quick selection. Product details are simplified to show only the name. Coupons are omitted since they are used at checkout. Discounts are visible but subtle. Size selection is improved with fit-related details for easier choices.</p>
+      </div>
+    </section>
+
+    <section id="conclusion">
+      <div>
+      <h2>Conclusion</h2>
+      <p>The redesign reduces cognitive overload and makes products more discoverable by removing redundant UI. It addresses the users concerns by simplifying the size selection feature and making the product selection flow distraction free and efficient. This redesign also ensures that Shein can actually feature all their products without making their app feel cluttered. The use of progressive disclosure in the redesign helps users find what they want without any confusion. </p>
+      </div>
+    </section>
+
+    <div class="MoreProjects">
+      <h2>More Projects</h2>
+       <div class="projects-grid">
+        <a href="/togathr/togathr.html" class="project project1" style="text-decoration: none; color: black; background-color: #E4D5FA;">
+          <div class="project project1">
+            <img src="/assests/devices_mobilendesktop 1.png" alt="Togathr Project" />
+            <div class="description" style="background-color: #E4D5FA;">
+              <h3 style="background-color: #E4D5FA;">Togathr</h3>
+              <p style="background-color: #E4D5FA;">AI based event planning platform</p>
+              <p class="sub-heading" style="background-color: #E4D5FA;">UI/UX . Product . Web App</p>
+            </div>
+          </div>
+          </a>
+
+          <a href="/safemilo/safemilo.html" class="project project2" style="text-decoration: none; color: black; background-color: #FFDFB7;">
+          <div class="project project2">
+            <img src="/assests/Group 1000006092.png" alt="safemilo Project" />
+            <div class="description" style="background-color: #FFDFB7;">
+              <h3 style="background-color: #FFDFB7;">SafeMilo</h3>
+              <p style="background-color: #FFDFB7;">Scam Protection App for Senior Citizens</p>
+              <p class="sub-heading" style="background-color: #FFDFB7;">UI/UX . Product . Web App . Agile</p>
+            </div>
+          </div>
+          </a>
+        </div>
+    </div>
+
+
+    
+      <footer id="contact">
+        <h2>Contact</h2>
+        <div class="socials">
+            <a href="mailto:sudikshask1@gmail.com " style="text-decoration: none;">
+                <img src="/assests/message.png" alt="Email Icon">
+              </a>
+              <a href="https://www.linkedin.com/in/sudiksha-kumar/" rel="noopener noreferrer">
+                <img src="/assests/Group 14.png" alt="LinkedIn Icon">
+              </a>
+        </div>
+        <p>&copy; Sudiksha Kumar 2025</p>
+      </footer>
+</body>
+</html>
