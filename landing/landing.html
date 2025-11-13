@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UX Designer Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="landing.css" />
+</head>
+<body>
+  <div class="logo"><img src="/assests/Group.png" alt=""></div>
+  <main class="chat-container">
+    <section class="rightChat-with-logo">
+      <div class="rightChat">
+      <div class="chat-bubble left">
+        <p>Hey, I’m a UX designer who believes the best products start with great conversations.</p>
+      </div>
+      <div class="chat-bubble left">
+        <p>Nice to meet you! Let’s talk about design.</p>
+      </div>
+    </div>
+      <div class="chatLogo">
+        <img src="/assests/Group 250.png" alt="chat logo" />
+      </div>  
+    </section>
+  
+    <div id="user-chat-area" class="user-chat-area">
+      <div class="leftChatLogo">
+        <img src="/assests/Group 251.png" alt=" chat logo">
+      </div>
+    </div>
+
+    <div class="options">
+      <button onclick="handleUserChoice('Tell me more!')">Tell me more!</button>
+      <button onclick="handleUserChoice('I\'m Curious')">I'm Curious</button>
+      <button onclick="handleUserChoice('Let\'s Go!')">Let’s Go!</button>
+    </div>
+  </main>
+
+  <script src="landing.js"></script>
+</body>
+</html>
+

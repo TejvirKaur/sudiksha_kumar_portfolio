@@ -1,0 +1,360 @@
+body {
+    margin: 0;
+    color: #2e2e2e;
+  }
+  
+  header {
+    background: #f5e2e0;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #hamburger span {
+    color: #2D469A; 
+    font-size: 35px;
+    
+  }
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  
+  .nav-links {
+    display: none;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    margin: 0 10px;
+    color: #3b48cc;
+    text-decoration: none;
+    font-weight: 500;
+     font-family: 'Noto sans';
+  }
+  
+  .logo {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  h1 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #2D469A;
+    font-weight: 700; 
+    font-size: 80px;
+    margin: 30px 0 0 0;
+  }
+  .fadeIn{
+     opacity: 0;
+     animation: fadeIn 2s ease-in forwards;
+  }
+
+  .workicon{
+    height: 7rem;
+    animation: slowRotate 20s linear infinite;
+    transform-origin: center center;
+  }
+
+  .profile-illustration {
+    margin-top: 1rem;
+    animation: popUp 2.5s ease-in-out;
+   transform-origin: center center;
+  } 
+
+  .introContent {
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Noto sans';
+    font-size: 14px;
+  }
+  .introContent a{
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Noto sans';
+    font-size: 14px;
+    text-decoration: none;
+    color: #2D469A;
+    font-weight: bold;
+  }
+  .introContent p{
+    text-align: center;
+  }
+
+  .introContent span{
+    color: #2D469A;
+    font-size: 16px;
+    border: #2D469A 1px solid;
+    border-radius: 25px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  .profile p{
+    margin-top: 2rem;
+  }
+
+  .sub-heading{
+    font-size: 13px;
+  }
+  
+  main {
+    padding: 2rem 1rem;
+    background-color: white;
+  }
+  h2,h3,h4,p{
+    font-family: 'Noto sans';
+  }
+  
+  #work h2 {
+    color: #2D469A;
+    margin-bottom: 2rem;
+  }
+  
+  #work h3, p{
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .project {
+    background: #E4D5FA;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project2{
+    background-color: #C8F2EB;
+  }
+  .project3{
+    background-color: #FFDFB7;
+  }
+  .project img {
+    width: 100%;
+    max-width: 444px;
+    height: 60%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .description h3 {
+    margin: 0.5rem 0 0.25rem;
+  }
+  
+  footer {
+    padding: 2rem 1rem;
+    text-align: left;
+  }
+  #contact{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+   #contact h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2D469A;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin-bottom: 10px;
+   }
+
+   #contact p{
+    text-align: center;
+    color: #2D469A;
+    font-weight: 500;
+   }
+
+   .socials{
+    margin-bottom: 70px;
+   }
+
+  .socials a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  @keyframes slowRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes popUp {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05); 
+    }
+  }
+  @keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+  
+  @media screen and (min-width: 750px) {
+    
+    .nav-links {
+      display: flex;
+    }
+    .hamburger {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .introContent p{
+        text-align: center;
+      }
+      
+      
+      #work{
+        max-width: 70vw;
+        margin: 0 auto;
+      }
+  
+      .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+     
+      .project1 {
+        grid-column: 1;
+      }
+      
+      .project2 {
+        grid-column: 2;
+      }
+      
+      .project3 {
+        grid-column: 1 / span 2;
+      }
+      
+  
+    .project img {
+      max-width: 300px;
+    }
+  
+    .description {
+      flex: 1;
+      padding-left: 2rem;
+    }
+      
+  }
+  
+  @media screen and (min-width: 1024px) {
+    h1{
+        font-size: 140px;
+        line-height: 130px;
+        margin: 70px 0 0 0;
+    }
+    nav {
+      padding: 0 3rem;
+    }
+    .hamburger {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      .introContent p{
+        text-align: left;
+      }
+
+    .intro-with-illustrations{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0 auto;
+      }
+    
+      .profile{
+        display: grid;
+        grid-template-columns: 1fr 60%;
+      }
+    
+      .work-illustration{
+        margin-top: 100px;
+      }
+    
+      .workicon{
+        height: 10rem;
+      }
+    
+      .profile-illustration {
+        margin-top: 1rem;
+      } 
+    
+      .introContent {
+        margin-top: 8rem;
+        margin-left: 1rem;
+        text-align: left;
+        font-family: 'Noto sans';
+        font-size: 14px;
+      }
+    
+      .introContent span{
+        color: #2D469A;
+        font-size: 16px;
+        border: #2D469A 1px solid;
+        border-radius: 25px;
+        padding: 8px;
+        margin-right: 10px;
+      }
+      .profile p{
+        margin-top: 2rem;
+      }
+  
+    main {
+      padding: 3rem 5rem;
+    }
+  
+    .intro {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    .project {
+      padding: 2rem;
+    }
+    .pro3{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-basis: 50% 50%;
+    }
+    .project3 img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  

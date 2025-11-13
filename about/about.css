@@ -1,0 +1,414 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #1c1c1c;
+    background: #fff;
+  }
+  .profile-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.circle-bg {
+  width: 300px;
+  height: 300px;
+  background-color: #f8f1f2; 
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.profile-img {
+  position: absolute;
+  bottom: 0;
+  width: 85%;
+  object-fit: contain;
+}
+  header {
+    padding: 1rem;
+    text-align: center;
+  }
+  .heading-container {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .doodle {
+    width: 90px; 
+    height: auto;
+  }
+  h1{
+    color: #2D469A;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: left;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+  }
+  .resume a{
+    text-decoration: none;
+    color: #2D469A;
+  }
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  #hamburger span {
+    color: #2D469A; 
+    font-size: 35px;
+    
+  }
+  .nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+  
+  .nav-links {
+    display: none;
+    list-style: none;
+    gap: 1rem;
+  }
+  
+  .nav-links li a {
+    margin: 0 10px;
+    color: #3b48cc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  
+  .intro {
+    text-align: center;
+    padding: 0 2rem;
+    border-bottom: 1px solid #ddd;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .profile-pic {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border: 1px solid #1c1c1c;
+    background: transparent;
+    cursor: pointer;
+  }
+  .resume{
+    text-align: left;
+  }
+  .doodle{
+    animation: slowRotate 20s linear infinite;
+    transform-origin: center center;
+  }
+  
+  .about {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  .philosophy{
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  
+  .about {
+    display: block;
+  }
+  
+  .about h2, p {
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  h2 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    color: #2D469A;
+    font-size: 28px;
+    margin-top: 0;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card {
+    background: #F6EFEF;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .philosophy p {
+    font-family: 'Noto sans';
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .hobbies{
+    background-color: #F6EFEF;
+  }
+  .hobby-content{
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .hobby-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .art-img {
+    width: 150px;
+    height: auto;
+    border-radius: .5rem;
+    transition: transform 0.3s ease;
+  }
+  .art-img:hover {
+    transform: scale(1.05);
+  }
+  .img1{
+    grid-column: -1;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .img2{
+    margin-top: 100px;
+  }
+  .img3{
+    margin-left: 30px;
+  }
+  
+  .hobbies h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  footer {
+    background-color: white ;
+    padding: 2rem 1rem;
+    text-align: left;
+  }
+  #contact{
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+
+   #contact h2{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2D469A;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin-bottom: 10px;
+   }
+
+   #contact p{
+    text-align: center;
+    color: #2D469A;
+    font-weight: 500;
+   }
+
+   .socials{
+    margin-bottom: 70px;
+   }
+
+  .socials a {
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+  }
+   @keyframes slowRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (min-width: 650px) {
+    .heading-container{
+      padding-left: 9rem;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    .circle-bg{
+      margin-bottom: 0;
+    }
+    .profile-container{
+      padding-bottom: 0;
+    }
+    .cards {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 3rem;
+    }
+
+    .card {
+      flex: 1 1 100%;
+    }
+    .nav-links {
+      display: flex;
+    }
+    .hamburger {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    .hobbies{
+      background-color: #F6EFEF;
+    }
+    .hobby-content{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  
+    .hobby-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    
+    .art-img {
+      width: 150px;
+      height: auto;
+      border-radius: .5rem;
+    }
+    .img1{
+      grid-column: -1;
+      margin-top: 10px;
+      margin-left: 30px;
+    }
+    .img2{
+      margin-top: 100px;
+    }
+    .img3{
+      margin-left: 30px;
+    }
+    
+    .hobbies h2{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }    
+    .hobby-text{
+      margin-top: 70px;
+      margin-left: 30px;
+    }
+      .hobby-text h2 {
+        font-size: 2rem;
+        color: #2D469A;
+        margin-bottom: 1rem;
+      }
+      
+      .hobby-text p {
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+      }
+    .about {
+      display: block;
+    }
+  }
+  
+  @media screen and (min-width: 1024px){
+    .profile-container{
+      justify-content: flex-start;
+      margin-left: 8rem;
+    }
+    .heading-container{
+      padding-left: 20rem;
+    }
+    h1{
+      font-size: 64px;
+    }
+    nav {
+      padding: 0 3rem;
+    }
+    .hamburger {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+  
+    .cards {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 3rem;
+    }
+  
+    .card {
+      flex: 1 1 30%;
+    }
+  
+    h2 {
+      font-size: 36px;
+    }
+  
+    .philosophy p {
+      font-size: 18px;
+    }
+    .hobby-content{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      max-width: 60vw;
+      margin: 0 auto;
+      padding: 20px;
+    }
+      .hobby-text h2 {
+        font-size: 2rem;
+        color: #2D469A;
+      }
+      .hobby-text{
+        margin-left: 20px;
+        margin-top: 70px;
+      }
+    
+  }
+  
